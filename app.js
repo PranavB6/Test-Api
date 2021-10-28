@@ -1,6 +1,8 @@
 import express, { response } from "express";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 const PORT = 8000;
 const data = { rainbows: "waterfall" };
 
